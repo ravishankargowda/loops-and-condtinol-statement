@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+const hour = new Date().getHours(); 
+let session;
+
+if (hour <6)
+ {
+  session = "Good morning";
+} 
+else if (hour<23)
+ {
+  session = "Good evening";
+}
+else
+ {
+  session = "Good night";
+}
+
+document.getElementById("demo").innerHTML = session;
+</script>
+
+
+</body>
+</html>
+
